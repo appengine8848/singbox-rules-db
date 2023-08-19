@@ -1,3 +1,4 @@
 domain:appshare.vip
 domain:muge.info
 domain:shares.pub
+domain:tucang.cc

@@ -1,7 +1,7 @@
-clear:.bing.com
-clear:.google.com
-clear:.googleadapis.com
-clear:.googleapis.com
-clear:microsoft
+all:.bing.com
+all:.google.com
+all:.googleadapis.com
+all:.googleapis.com
+all:microsoft
 full:googleapis-cn.com
 full:googleapps-cn.com

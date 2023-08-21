@@ -62,6 +62,7 @@ async def cn_domains3():
 
 
 async def custom_direct_remove():
+    all_list = []
     clear_list = []
     with open("custom-direct-remove.txt", "r", encoding="utf-8") as file:
         for domain in file:
@@ -70,6 +71,8 @@ async def custom_direct_remove():
             domain_suffix = domain_split[0]
             domain_name = domain_split[-1]
             match domain_suffix:
+                case "all":
+                    all_list.append(domain_name)
                 case "clear":
                     clear_list.append(domain_name)
                 case "domain":
@@ -85,20 +88,27 @@ async def custom_direct_remove():
                     except ValueError:
                         print(f"{domain_suffix} 规则未匹配 {domain}")
 
-    _cn_domains_list = cn_domains_list.copy()
-    _full_domains_list = full_domains_list.copy()
-    for domain in _cn_domains_list:
-        for remove_domain in clear_list:
-            if remove_domain in domain:
-                cn_domains_list.remove(domain)
-                print(f"clear 规则已删除 {domain}")
-                break
-    for domain in _full_domains_list:
-        for remove_domain in clear_list:
-            if remove_domain in domain:
-                full_domains_list.remove(domain)
-                print(f"clear 规则已删除 {domain}")
-                break
+    if clear_list:
+        _cn_domains_list = cn_domains_list.copy()
+        for domain in _cn_domains_list:
+            for remove_domain in all_list:
+                if remove_domain in domain:
+                    cn_domains_list.remove(domain)
+                    print(f"all 规则已删除 {domain}")
+                    break 
+            for remove_domain in clear_list:
+                if remove_domain in domain:
+                    cn_domains_list.remove(domain)
+                    print(f"clear 规则已删除 {domain}")
+                    break
+    if all_list:
+        _full_domains_list = full_domains_list.copy()
+        for domain in _full_domains_list:
+            for remove_domain in all_list:
+                if remove_domain in domain:
+                    full_domains_list.remove(domain)
+                    print(f"all 规则已删除 {domain}")
+                    break
 
 
 async def main():

@@ -7,14 +7,24 @@
 ### custom-direct.txt
 
 - 想要加入的直连列表
-- 支持类型 `domain` `full` `regexp` `keyword`
-  - 例如 `domain:baidu.com` `full:www.baidu.com`
+- 支持类型
+  - `domain`
+  - `full`
+  - `regexp`
+  - `keyword`
 
 ### custom-direct-remove.txt
 
 - 想要删除的直连列表
-- 支持类型 `clear` `domain` `full` `regexp` `keyword`
-- `clear` 会以关键词匹配删除
+- 支持类型
+  - `all`
+  - `clear` 
+  - `domain` 
+  - `full` 
+  - `regexp` 
+  - `keyword`
+- `all` 和 `clear` 会以关键词匹配删除，区别在于 `all` 会匹配所有规则，`clear` 仅匹配域名
+  - `all:google.com` 会删除 `xxx.google.com` `full:xxx.google.com`
   - `clear:.google.com` 会删除 `a.google.com` `a.b.google.com`
   - `clear:google.com` 会删除 `google.com` `agoogle.com` `xxx.google.com`
 - `domain` 会删除对应的域名

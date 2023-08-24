@@ -2,6 +2,10 @@
 
 更好用的可自定义 geosite，适用于 singbox
 
+## 自定义 geosite
+
+放在 custom 目录下
+
 ## 自定义规则文件
 
 ### custom-direct.txt

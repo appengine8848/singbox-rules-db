@@ -33,6 +33,7 @@ jobs:
           python3 -m pip install httpx > /dev/null
           python3 make_rules.py
           cp direct-list.txt ./community/data/cn
+          mv ./custom/* ./community/data/
 
       - name: Build geosite.dat file
         run: |

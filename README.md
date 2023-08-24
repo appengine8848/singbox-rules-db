@@ -4,7 +4,7 @@
 
 ## 自定义 geosite
 
-放在 custom 目录下
+放在 geosite-custom 目录下
 
 ## 自定义规则文件
 

@@ -88,7 +88,7 @@ async def custom_direct_remove():
                     except ValueError:
                         print(f"{domain_suffix} 规则未匹配 {domain}")
 
-    if clear_list:
+    if clear_list or all_list:
         _cn_domains_list = cn_domains_list.copy()
         for domain in _cn_domains_list:
             for remove_domain in all_list:

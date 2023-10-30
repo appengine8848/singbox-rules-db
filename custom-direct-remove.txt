@@ -2,6 +2,7 @@ all:.bing.com
 all:.google.com
 all:.googleadapis.com
 all:.googleapis.com
-all:microsoft
+full:microsoft.com
+full:microsoftonline.com
 full:googleapis-cn.com
 full:googleapps-cn.com

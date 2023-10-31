@@ -57,3 +57,9 @@ full:onepass.geetest.com
 # Fake Location
 full:fakelocation.api.lerist.dev
 full:api.fakeloc.cc
+# 讯飞输入法
+full:imeffkdword.openspeech.cn
+full:planconfig.openspeech.cn
+full:hdns.openspeech.cn
+full:log.voicecloud.cn
+regexp:inputl.*\.xfinfr\.com

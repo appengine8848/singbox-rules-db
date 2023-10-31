@@ -62,4 +62,12 @@ full:imeffkdword.openspeech.cn
 full:planconfig.openspeech.cn
 full:hdns.openspeech.cn
 full:log.voicecloud.cn
-regexp:inputl.*\.xfinfr\.com
+full:inputd.xfinfr.com
+full:abtest.openspeech.cn
+full:ime-res-download.xfinfr.com
+full:newuser.openspeech.cn
+full:ossp.voicecloud.cn
+full:topic.openspeech.cn
+full:coop.voicecloud.cn
+regexp:inputl[0-9]\.xfinfr\.com
+regexp:l[0-9]\.xfinfr\.com

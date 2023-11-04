@@ -2,7 +2,7 @@ all:.bing.com
 all:.google.com
 all:.googleadapis.com
 all:.googleapis.com
-all:.ksosoft.com
+domain:ksosoft.com
 all:microsoft.com
 all:microsoftonline.com
 full:googleapis-cn.com
